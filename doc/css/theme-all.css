@@ -1,0 +1,12 @@
+@import url(common/meta-properties.css);
+@import url(common/reset.css);
+@import url(common/basic.css);
+
+@import url(partial/crossref.css);
+@import url(partial/endnote.css);
+@import url(partial/footnote.css);
+@import url(partial/footnote-external-link.css);
+@import url(partial/page.css);
+@import url(partial/section.css);
+@import url(partial/toc.css);
+@import url(partial/utility-classes.css);
