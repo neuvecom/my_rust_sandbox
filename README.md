@@ -24,3 +24,8 @@
 - touch src/bin/zeller.rs
 - cargo run --bin zeller
 
+- [【Rust コーディング実況解説 #3】初心に帰って バブルソート - YouTube](https://www.youtube.com/watch?v=69wrkarV0IQ)
+
+- touch src/bin/bubble_sort.rs
+  - cargo add rand
+- cargo run --bin bubble_sort
