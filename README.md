@@ -16,5 +16,11 @@
 - mkdir src/bin
 - touch src/bin/fizzbuzz.rs
 - cargo run --bin fizzbuzz
+
+- [日付から曜日を計算 ツェラーの公式【Rust コーディング実況解説 #2】 - YouTube](https://www.youtube.com/watch?v=PtuwXqy2LXg)
+
 - touch src/bin/leap_year.rs
 - cargo run --bin leap_year
+- touch src/bin/zeller.rs
+- cargo run --bin zeller
+
