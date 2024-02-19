@@ -16,3 +16,5 @@
 - mkdir src/bin
 - touch src/bin/fizzbuzz.rs
 - cargo run --bin fizzbuzz
+- touch src/bin/leap_year.rs
+- cargo run --bin leap_year
