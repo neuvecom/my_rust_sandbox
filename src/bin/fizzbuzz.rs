@@ -1,7 +1,11 @@
 
 fn main() {
-  let n: i32 = 20;
-  
+  let n: usize = 20;
+  println!("FizzBuzz");
+  fizz_buzz(n);
+}
+
+fn fizz_buzz(n: usize) {
   for i in 1..=n {
     if i % 15 == 0 {
       println!("{} : FizzBuzz", i);
@@ -14,3 +18,4 @@ fn main() {
     }
   }
 }
+
