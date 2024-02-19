@@ -12,4 +12,7 @@
   - cargo 1.76.0 (c84b36747 2024-01-18)
 
 - cargo init
-- 
+  - git initもいるか？
+- mkdir src/bin
+- touch src/bin/fizzbuzz.rs
+- cargo run --bin fizzbuzz
