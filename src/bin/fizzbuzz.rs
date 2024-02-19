@@ -3,7 +3,7 @@ fn main() {
   let n: usize = 20;
   println!("FizzBuzz");
   fizz_buzz(n);
-  println!("FizzBuzz Match ver.");
+  println!("\nFizzBuzz Match ver.");
   fizz_buzz_match(n);
 }
 
