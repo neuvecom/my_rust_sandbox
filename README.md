@@ -37,15 +37,11 @@
 
 基礎プログラミング演習I 〜100本ノックをRustでやってみる
 - [基礎プログラミング演習I 〜100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
-- cargo run --bin xxxxxxx
-- [基礎プログラミング演習I 〜100本ノック基礎編](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocksBasic.html)
-- touch src/bin/knock100_001.rs => 足し算
-- touch src/bin/knock100_002.rs => 余り
-- touch src/bin/knock100_003.rs => 入力
-- touch src/bin/knock100_004.rs => 入力と計算
-- touch src/bin/knock100_004.rs => 四則演算
-- ...
+- [進捗](./src/bin/knock100.md)
+- zsh setup.sh
+- zsh run.sh
 
+その他の資料
 - [なぜかRustで言語処理100本ノック ～目次～ #Rust - Qiita](https://qiita.com/kbone/items/e15583bf5084c45c5c82)
   - [言語処理100本ノック 2015](https://www.cl.ecei.tohoku.ac.jp/nlp100/)
     - [なぜかRustで言語処理100本ノック ～第1章 前編～ #Rust - Qiita](https://qiita.com/kbone/items/47d108d361359de6b34c)
@@ -53,5 +49,6 @@
 - [Rust 練習用](https://gist.github.com/shootacean/0907b8613b4b164f8196599ee871c564)
 
 ## メモ
-モチベが下がるので、ファイル生成ツール(setup.sh)を作った
-src/binの中にメインのあるファイルを置くと良いらしい
+- モチベが下がるので、ファイル生成ツール(setup.sh)を作った
+  - src/binの中にメインのあるファイルを置くと良いらしい
+  - run.shも作った
