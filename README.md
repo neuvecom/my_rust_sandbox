@@ -39,6 +39,7 @@ Rustの環境を確認
 - [進捗](./src/bin/knock100.md)
 - `zsh setup.sh`
 - `zsh run.sh`
+- [Rustの100本ノックを受けようとしているけど、なかなか進まない件](https://zenn.dev/neuvecom/articles/bd97773d971a33)
 
 参考になるURL
 - [お勉強: 100本ノック on Rust｜ぐは](https://note.com/densukeo/n/n3a3d734948b0)
