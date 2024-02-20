@@ -10,6 +10,9 @@ fn main() {
         .split_whitespace()
         .map(|x| x.parse().unwrap())
         .collect();
+    println!("Input 1: {}", input[0]);
+    println!("Input 2: {}", input[1]);
+    println!("Input 3: {}", input[2]);
     if input[0] <= input[1] && input[1] <= input[2] {
         println!("OK");
     } else {
