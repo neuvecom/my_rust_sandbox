@@ -1,6 +1,6 @@
 # Rust関連の実験用
 
-[(7) 【Rust コーディング実況解説 #1】FizzBuzz問題をmatch式で美しく](https://www.youtube.com/watch?v=gDyk6OTSdto)
+[【Rust コーディング実況解説 #1】FizzBuzz問題をmatch式で美しく](https://www.youtube.com/watch?v=gDyk6OTSdto)
 
 Rustの環境を確認
 - `rustup --version`
@@ -37,8 +37,8 @@ Rustの環境を確認
 基礎プログラミング演習I 〜100本ノックをRustでやってみる
 - [基礎プログラミング演習I 〜100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
 - [進捗](./src/bin/knock100.md)
-- zsh setup.sh
-- zsh run.sh
+- `zsh setup.sh`
+- `zsh run.sh`
 
 参考になるURL
 - [お勉強: 100本ノック on Rust｜ぐは](https://note.com/densukeo/n/n3a3d734948b0)
