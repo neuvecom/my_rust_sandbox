@@ -1,4 +1,4 @@
-# Rust関連の実験用
+# 個人的なRustの実験用
 
 [【Rust コーディング実況解説 #1】FizzBuzz問題をmatch式で美しく](https://www.youtube.com/watch?v=gDyk6OTSdto)
 
