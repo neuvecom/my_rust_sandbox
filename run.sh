@@ -80,10 +80,23 @@ fi
 # ファイル名の加工
 doFile=${doFile/${FILE_NAME_END}/}
 
+# 読込ファイルの指定
+if [ "$doFile" = "knock100_054" ]; then
+  echo "-- [！] 読込ファイル指定が必要な課題です。"
+  echo -e "-- (^_^)ノ \033[1;31m読込ファイルを選択してください。\033[0;39m"
+  echo "-- "
+  echo "-> retuenキーで選択画面に進みます。"
+  read Peco
+  readFile=`ls -1  ./054data | peco`
+  echo "-- 読込ファイル[${readFile}]"
+else
+  echo "-- [!] 読込ファイル指定が不要な課題です。"
+fi
+
 # 実行
-echo "-- Cargo Runを実行します。[${doFile}]"
+echo "-- Cargo Runを実行します。[${doFile}] [${readFile}]"
 echo "  "
-cargo run --bin $doFile
+cargo run --bin $doFile $readFile
 
 # 終了処理
 echo "  "

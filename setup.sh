@@ -84,7 +84,10 @@ fi
 for ((i=$srartNum; i < $stopNum+1; i++)); do
     myFile=${SCRIPT_DIR}${MAKE_DIR}/${FILE_NAME_PREF}$(printf "%03d\n" $i)${FILE_NAME_END}
     touch $myFile
-    echo "// このファイルはスクリプトにより生成されました" >> $myFile
+    echo "/*" >> $myFile
+    echo "このファイルはスクリプトにより生成されました" >> $myFile
+    echo "*/" >> $myFile
+    echo "" >> $myFile
     echo "fn main() {" >> $myFile
     echo "" >> $myFile
     echo "}" >> $myFile
