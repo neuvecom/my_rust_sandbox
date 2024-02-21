@@ -3,5 +3,5 @@
 fn main() {
     let a = 12345;
     let b = 7;
-    println!("{} % {} = {}", a, b, a % b);
+    println!("{} ÷ {} の余りは {}", a, b, a % b);
 }

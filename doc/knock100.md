@@ -1,3 +1,9 @@
+---
+link:
+  - rel: 'stylesheet'
+    href: 'css/default.css'
+---
+
 # 基礎プロI 100本ノック
 - [基礎プログラミング演習I 〜100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
 
@@ -116,3 +122,6 @@
   - [ ] No. 97 ビンゴその1 ☆☆☆
   - [ ] No. 98 ビンゴその2 ☆☆☆☆☆
   - [ ] No. 99 自由制作 ☆×？
+
+- [モジュールのベストプラクティス](https://zenn.dev/msakuta/articles/83f9991b2aba62)
+- 

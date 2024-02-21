@@ -3,11 +3,11 @@ use std::io::{Write, self};
 
 fn main() {
     let mut input = String::new();
-    print!("input number:");
+    print!("input number: ");
     io::stdout().flush().unwrap();
     std::io::stdin().read_line(&mut input).ok();
     let input = input.trim();
     let output: i32 = input.parse().unwrap();
-    println!("your number x 3 is: {}", output * 3);
+    println!("answer = {}", output * 3);
 }
 
