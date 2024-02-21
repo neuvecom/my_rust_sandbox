@@ -1,4 +1,5 @@
 // 配列を入力値で初期化
+
 fn main() {
   println!("整数値を入力してください。");
   let mut input = String::new();

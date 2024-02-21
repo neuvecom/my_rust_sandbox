@@ -39,4 +39,18 @@ link:
   - トレイト => 抽象化
 
 ### メモ
+- マルチパラダイム
+  - 手続き型・オブジェクト指向型・関数型
+    - 値がデフォルトで変更不可（イミュータブル）
+    - Option型
+    - パターンマッチ
+- コンパイルエラーをリアルタイムで確認しながら書く
+- コードは見るだけでなく実際に動かす
+- $HOME/.cargo、$HOME/.rustup
+- cargo
+- rustc
+- clippy
+- rustfmt
+- rls/rust-analysis/rust-src
+- rustdoc
 - 

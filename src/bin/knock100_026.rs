@@ -1,6 +1,9 @@
-// 整数値を入力させ、その値が1ならone、2ならtwo、3ならthree、
-// それ以外ならothersと表示するプログラムを
-// matchを使って作成せよ。(swicth-case文から変更)
+/*
+整数値を入力させ、その値が1ならone、2ならtwo、3ならthree、
+それ以外ならothersと表示するプログラムを
+matchを使って作成せよ。(swicth-case文から変更)
+*/
+
 fn main() {
   println!("Input number");
   let mut input = String::new();

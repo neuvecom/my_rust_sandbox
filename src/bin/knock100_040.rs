@@ -1,5 +1,8 @@
-// 整数値を入力させ、その値が偶数ならばeven、
-// 奇数ならばoddと表示するプログラムを作成せよ。
+/*
+整数値を入力させ、その値が偶数ならばeven、
+奇数ならばoddと表示するプログラムを作成せよ。
+*/
+
 fn main() {
     println!("Input number");
     let mut input = String::new();
