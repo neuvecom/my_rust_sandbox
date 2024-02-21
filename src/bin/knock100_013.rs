@@ -1,13 +1,10 @@
-// 整数値を入力させ、0から入力値まで数を1ずつ増やして表示するプログラムを作成せよ。
+// 整数値を入力させ、0から入力値まで数を1ずつ増やして表示するプログラム
 
-use std::io::{Write, self};
+mod lib_knock100_get_num;
+use crate::lib_knock100_get_num::get_num;
 
 fn main() {
-  print!("input number: ");
-  let mut input = String::new();
-  io::stdout().flush().unwrap();
-  std::io::stdin().read_line(&mut input).unwrap();
-  let input: u32 = input.trim().parse().unwrap();
+  let input = get_num("input number".to_string());
   for i in 0..=input {
     println!("{}", i);
   }

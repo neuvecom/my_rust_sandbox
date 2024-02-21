@@ -1,20 +1,13 @@
 /*
 整数値を入力させ、値が0ならzeroと表示するプログラム。
-整数値を入力させ、値が0ならzero、0でなければnot zeroと表示するプログラムを作成せよ。
+整数値を入力させ、値が0ならzero、0でなければnot zeroと表示するプログラム
 */
 
-use std::io::{Write, self};
+mod lib_knock100_get_num;
+use crate::lib_knock100_get_num::get_num;
 
 fn main() {
-    // 初期化
-    let mut input = String::new();
-    // 入力
-    print!("input number: ");
-    io::stdout().flush().unwrap();
-    std::io::stdin().read_line(&mut input).ok();
-    let input = input.trim();
-    let output: i32 = input.parse().unwrap();
-    // 結果を出力
+    let output = get_num("input number".to_string());
     if output == 0 {
         println!("The input number is zero.");
     } else {

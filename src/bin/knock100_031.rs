@@ -1,14 +1,14 @@
 /*
 整数値を入力させ、その個数だけ*を、
-5個おきに空白（スペース）を入れて表示するプログラムを作成せよ。
+5個おきに空白（スペース）を入れて表示するプログラム
 入力値が0以下の値の場合は何も書かなくてよい。
 */
 
+mod lib_knock100_get_num;
+use crate::lib_knock100_get_num::get_num;
+
 fn main() {
-  println!("Input number");
-  let mut input = String::new();
-  std::io::stdin().read_line(&mut input).unwrap();
-  let input: i32 = input.trim().parse().unwrap();
+  let input = get_num("input number".to_string());
   if input > 0 {
     for i in 1..input {
       if i % 5 == 0 {

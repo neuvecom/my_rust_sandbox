@@ -1,19 +1,12 @@
 /*
-整数値を入力させ、その値を絶対値にして表示するプログラムを作成せよ。
-（できれば変数の値を絶対値に変えるようにせよ）
+整数値を入力させ、その値を絶対値にして表示するプログラム
+（できれば変数の値を絶対値に変えるようにする）
 */
 
-use std::io::{Write, self};
+mod lib_knock100_get_num;
+use crate::lib_knock100_get_num::get_num;
 
 fn main() {
-    // 初期化
-    let mut input = String::new();
-    // 入力
-    print!("input number: ");
-    io::stdout().flush().unwrap();
-    std::io::stdin().read_line(&mut input).ok();
-    let input = input.trim();
-    let output: i32 = input.parse().unwrap();
-    // 結果を出力
+    let output = get_num("input number".to_string());
     println!("absolute value is {}", output.abs());
 }

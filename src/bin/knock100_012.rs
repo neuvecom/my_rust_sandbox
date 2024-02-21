@@ -1,13 +1,10 @@
-// 整数値を入力させ、その値の回数だけHello World!を繰り返して表示するプログラムを作成せよ。
+// 整数値を入力させ、その値の回数だけHello World!を繰り返して表示するプログラム
 
-use std::io::{Write, self};
+mod lib_knock100_get_num;
+use crate::lib_knock100_get_num::get_num;
 
 fn main() {
-  print!("input number: ");
-  let mut input = String::new();
-  io::stdout().flush().unwrap();
-  std::io::stdin().read_line(&mut input).unwrap();
-  let input: u32 = input.trim().parse().unwrap();
+  let input = get_num("input number".to_string());
   for _ in 0..input {
     println!("Hello World!");
   }
