@@ -74,7 +74,7 @@ else
   echo "-> 実行するファイル名を指定してください"
   echo "-> retuenキーで選択画面に進みます。"
   read Peco
-  doFile=`ls -1 | grep "${FILE_NAME_PREF}" | peco`
+  doFile=`ls -1 | grep "^${FILE_NAME_PREF}" | peco`
 fi
 
 # ファイル名の加工

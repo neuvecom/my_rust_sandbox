@@ -1,8 +1,9 @@
 // -- モジュールの取り込み
-mod lib_knock100;
+mod lib_knock100_test;
+mod lib_knock100_get_num;
 // -- ショートカットの定義
-use crate::lib_knock100::{test, echo_test, get_num};
-/* ショットカットは使用モジュールがわかるようなのにしたほうがいいかも */
+use crate::lib_knock100_test::{test, echo_test};
+use crate::lib_knock100_get_num::get_num;
 
 fn main() {
   test();

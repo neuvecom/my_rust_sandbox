@@ -1,18 +1,8 @@
-/* 100本ノック用によく使用する処理をモジュール化 */
+/* 100本ノック用によく使用する処理をモジュール化(getNum) */
 
 // 標準ライブラリのioモジュールのショートカット
-// print!マクロ（get_numで使用）を使うために必要
+// print!マクロ（getNumで使用）を使うために必要
 use std::io::{Write, self};
-
-// テスト用Hello World
-pub fn test() {
-  println!("Hello World!");
-}
-
-// 引数をそのまま出力するテスト
-pub fn echo_test(str: String) {
-  println!("{}", str);
-}
 
 // 数値の入力を促し、その数値を返す
 pub fn get_num(label: String) -> i32 {
