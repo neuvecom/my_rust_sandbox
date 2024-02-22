@@ -8,55 +8,40 @@
 なお、入力値は1行ずつ3つの値をスペースで区切って入力するようにする
 このためには、scanf("%d %d %d", &a[0][0], &a[0][1], &a[0][2]);のように書く(No. 57参照)。
 表示は各列の値を揃えるためにタブ(\t)を使う
+※入力めんどいので、ランダムで生成する
+cargo add rand
 */
 
-mod lib_knock100_get_num;
-use crate::lib_knock100_get_num::get_num;
+use rand::Rng;
+use std::num::Wrapping;
 
 fn main() {
-  let input = get_num("input number1-1".to_string());
-
+  let queue1 = make_queue(3, 3);
+  let queue2 = make_queue(3, 3);
+  println!("行列1: {:?}",queue1 );
+  println!("行列2: {:?}",queue2 );
+  println!("行列1と行列2の和:");
+  for _i in 0..3 {
+    for _j in 0..3 {
+      // Rustでの整数オーバーフローまとめ
+      // https://qiita.com/garkimasera/items/c5e06de1a7c66aa7652a
+      print!("{}\t", Wrapping(queue1[_i][_j]) + Wrapping(queue2[_i][_j]));
+    }
+    println!();
+  }
 }
 
-/* 
-1つめの行列
-1 2 3
-4 5 6
-7 8 9
-2つめの行列
-2 3 4
-5 6 7
-8 9 1
-和
-3	5	7	
-9	11	13	
-15	17	10	
-
-fn main() {
-    let matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-    let matrix2 = [[10, 11, 12], [13, 14, 15], [16, 17, 18]];
-
-    let mut sum_matrix = [[0; 3]; 3];
-
-    for i in 0..3 {
-        for j in 0..3 {
-            sum_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
-        }
+// ランダムでnxn行列を生成する
+fn make_queue(row:i8, col: i8) -> Vec<Vec<i8>> {
+  let mut rng = rand::thread_rng();
+  let mut queue: Vec<Vec<i8>> = vec![];
+  for _ in 0..row {
+    let mut row: Vec<i8> = vec![];
+    for _ in 0..col {
+      let i: i8 = rng.gen();
+      row.push(i);
     }
-
-    println!("行列の和は:");
-    for row in sum_matrix.iter() {
-        for element in row.iter() {
-            print!("{} ", element);
-        }
-        println!();
-    }
+    queue.push(row);
+  }
+  queue
 }
-
-2つの3x3行列を定義します。
-2つの行列の各要素の合計を計算します。
-合計値を新しい行列に格納します。
-新しい行列を表示します。
-
-
-*/

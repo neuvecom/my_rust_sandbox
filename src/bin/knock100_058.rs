@@ -11,8 +11,8 @@ use crate::lib_knock100_get_num::get_num;
 fn main() {
     let mut data: Vec<i32> = vec![];
     for _ in 0..5 {
-      let input = get_num("input number(>0)".to_string());
-      data.push(input);
+        let input = get_num("input number(>0)".to_string());
+        data.push(input);
     }
     println!("{:?}", data);
     for i in 0..5 {
