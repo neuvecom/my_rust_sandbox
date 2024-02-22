@@ -57,3 +57,14 @@ Rustの環境を確認
 - モチベが下がるので、ファイル生成ツール(setup.sh)を作った
   - src/binの中にメインのあるファイルを置くと良いらしい
   - run.shも作った
+
+## 一段落したら読む
+- [Rustの実用性が理解できる図を作成してみた 〜C/C++/Java/JS/Python/Go/TS/Elixirとの比較〜](https://zenn.dev/hinastory/articles/7857427ea390c5)
+- [Actix非公式 日本語ドキュメント](https://actix-website.pages.dev/)
+- [Unsafeがよくわからなかったので整理した (Rust) - 射撃しつつ前進](https://gkuga.hatenablog.com/entry/2020/02/14/132244)
+- [マクロに入門したので概要を書く (Rust) - 射撃しつつ前進](https://gkuga.hatenablog.com/entry/2020/02/07/225353)
+
+## 一時的にメモ
+- [RustでGTFSファイルをURLから読み込む #Rust - Qiita](https://qiita.com/awrznc/items/3b0b71895e0221b25c93)
+  - [GTFSってなんですか？ | 地域公共交通のトリセツ（取組説明書）](https://kotsutorisetsu.com/20201105-2/)
+- [ファイル読み込み \[File, BufReader\] Rust Tips-モバイル開発系(K)](https://www.office-matsunaga.biz/rust/description.php?id=9)

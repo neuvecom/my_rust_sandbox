@@ -81,13 +81,18 @@ fi
 doFile=${doFile/${FILE_NAME_END}/}
 
 # 読込ファイルの指定
-if [ "$doFile" = "knock100_054" ]; then
+if [ "$doFile" = "knock100_054" ] || [ "$doFile" = "knock100_057" ]; then
   echo "-- [！] 読込ファイル指定が必要な課題です。"
   echo -e "-- (^_^)ノ \033[1;31m読込ファイルを選択してください。\033[0;39m"
   echo "-- "
   echo "-> retuenキーで選択画面に進みます。"
   read Peco
-  readFile=`ls -1  ./054data | peco`
+  if [ "$doFile" = "knock100_054" ] ; then
+    readFile=`ls -1  ./054data | peco`
+  fi
+  if [ "$doFile" = "knock100_057" ] ; then
+    readFile=`ls -1  ./057data | peco`
+  fi
   echo "-- 読込ファイル[${readFile}]"
 else
   echo "-- [!] 読込ファイル指定が不要な課題です。"
