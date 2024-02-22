@@ -9,17 +9,20 @@ mod lib_knock100_get_num;
 use crate::lib_knock100_get_num::get_num;
 
 fn main() {
-    // let input: Vec<i32> = vec![3, 7, 1, 5, 4];
-    let mut sum = 0;
-    // let input = get_num("input number".to_string());
+    let mut data: Vec<i32> = vec![];
     for _ in 0..5 {
-      let input = get_num("input number".to_string());
-      sum += input;
+      let input = get_num("input number(>0)".to_string());
+      data.push(input);
     }
-    for i in sun {
-        print!("{}\t:", i);
-        for _ in 0..i {
-            print!("*");
+    println!("{:?}", data);
+    for i in 0..5 {
+        print!("{}\t:", data[i]);
+        for j in 1..data[i]+1 {
+            if j % 5 == 0 {
+                print!("* ");
+            } else {
+                print!("*");
+            }
         }
         println!();
     }
